@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS</title>
+  </head>
+  <body>
+
+    <script language=javascript type="text/javascript">
+    array1 = new Array ("Maçã", "Banana", "Uva", "Laranja", "Pessêgo", "Bergamota", "Melancia", "Kibe", "Abacaxi", "Mamão");
+    </script>
+
+    <script language=javascript type="text/javascript">
+    document.write("Fruta " + array1[1] + "</br></br>");
+
+    document.write("Fruta " + array1[7]);
+    </script>
+
+    <script language=javascript type="text/javascript">
+
+    function arrey1(){
+    var nome = prompt ("Digite 1 Numero ");
+    var nome = parseInt(nome);
+    var x = nome -1;
+    var y = nome ;
+    var z = nome + 1 ;
+    //var numero = [x,y,z];
+    document.write(x + "  " , y + "  " , z);
+    }
+    </script>
+    <br>
+    <br>
+    <button onclick="arrey1()">NUMERO</button>
+
+
+    <script language=javascript type="text/javascript">
+
+    function verifica() {
+  var chaves = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'M', 'N', 'O'];
+  var item = document.getElementById('txt').value;
+  if (chaves.indexOf(item) > -1) {
+    alert("Encontrou");
+  } else {
+    alert("Não encontrou");
+  }
+}
+    </script>
+<br>
+<br>
+    <input type="text" id="txt" onblur="verifica()" />
+
+
+
+
+
+    <script language=javascript type="text/javascript">
+
+    function solicite(){
+      var soli = prompt("Digite 1 Numero ");
+      if (soli < 10) {
+        alert("Menor que 10")
+      }else if (soli > 10) {
+        alert("Maior que 10")
+      }else {
+        alert("Igual a 10")
+      }
+    };
+    </script>
+<br>
+<br>
+<button onclick="solicite()">SOLICITE</button>
+
+
+
+
+
+
+    <script type="text/javascript" src="js/ma.js"></script>
+  </body>
+</html>
